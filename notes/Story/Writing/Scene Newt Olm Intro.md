@@ -2,6 +2,7 @@
 
 *Conclusion:* You both arrive at Olm's lair. You individually do negotiations over something.
 
+*Information being withheld:* Olm and Newt have a deal; that the higher quality ore will go to Newt and the [[Pleurodelinae Plutocracy]] instead of the Queen. Why? Idk.
 ## Newt Intro
 
 "The Queen gives you directions to the OIm's home. It's quite a distance away from anything else."
@@ -40,3 +41,33 @@ n "Come, come, warm yourself in the living room. Olm isn't the biggest one for n
 
 n "I'll be quick, Darl. I'll let Olm know you're waiting."
 ## Olm Intro
+"Newt exits the chamber, and waves you in."
+
+"It's dark. Your eyes adjust to the cave."
+
+o "Hello."
+
+o "Now, why is an outsider to the kingdom inside my innermost chamber...?"
+
+o "Yes, yes. Newt let you in. I don't know why she did that. But please, make it quick. I have many more important things to tend to than... whatever this is."
+
+"Olm vaguely gestures in your direction."
+
+o "Oh? The mining exports are of low-quality? That's unfortunate, isn't it?"
+
+o "The reality of the situation is, that ore is still the greatest quality available. We can't exactly mine pure steel out of the ground. The vein gives eventually."
+
+o "No. No, there is nothing to talk about here. Neither I nor the Queen have the agency to change the simple fact that there is not enough. I propose that you simply go back to her, and let her be a bit sad for a bit. I'm certain she'll get over it."
+
+o "If you can't handle that, I *can* offer a work around."
+### Devious scheme
+o "Herzog's territory is relatively rich in mineral wealth. However, the fool has declined every opportunity to exploit it. I propose this:"
+
+"Olm procures a small sphere, split in two halves, and rolls it to you."
+
+o "This is a 'dowsing' drone. All you have to do is spin the two halves against each other to activate it in Herzog's territory. It will do the rest."
+
+o "If you can do this for me, I can promise the Queen that the ores she receives will be of renewed high quality within the next two weeks."
+
+### Outro
+"You go back home lol"
