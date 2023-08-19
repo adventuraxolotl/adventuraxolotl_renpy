@@ -19,3 +19,16 @@ Don can give you rumours and you can hire hit/spy squads from him.
 Baron turns into a shop when you have high enough affection. You can buy various game-altering technologies only when he thinks that you are worthy of them.
 
 However, buying items and bribes don’t actually work on these two to increase Affection. This is because they bribe people often, even the player, so they know what’s up. The real way to become friends with Don is by convincing him that you care about him even though he’s a fish. For the Baron, it’s listening to his nerdy ramblings and getting excited with him.
+### Items and Gifts
+The player will be able to hold onto items, and give them to various characters, or use them in some other way. They can be bought, found, or given.
+### The Calendar
+At some cycle length (every month?), the great council will convene and discuss/vote on a measure or reform.
+The player can sign up to do certain things, such as be on committees etc. This can be a regular expectation.
+### Locations 
+Each day/week the player will choose one activity. Some conversations are time-taking, others are not. There should be a way to spend time with characters without triggering a conversation.
+
+e.g., learn psychology with the queen. Practice swordfighting with peeper. Play chess with herzog. That kind of thing.
+
+At each location there may be multiple characters, or activities that aren't talking to characters. The player will be able to choose what to do, or who to talk to, once arrived at a location.
+### Home
+There may be a player home. Somewhere near axolotl. Just somewhere to end days on.
