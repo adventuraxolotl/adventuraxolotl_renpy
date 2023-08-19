@@ -1,25 +1,37 @@
 {
 	"nodes":[
 		{"type":"file","file":"notes/Story/Characters/Queen Axolotl.md","id":"e491bc4a8b3cf691","x":-1040,"y":-40,"width":400,"height":400,"color":"6"},
-		{"type":"file","file":"notes/Story/Characters/Baron Olm.md","id":"a9571d6cab80a3a4","x":-200,"y":-600,"width":400,"height":400},
 		{"type":"text","text":"Plot: Someone is poisoning axolotl to get her to morph. She's ill.","id":"a56c06d166ec1950","x":-1649,"y":146,"width":250,"height":94},
 		{"type":"text","text":"Secret: Selling quality ore","id":"8c327090177ad1d2","x":365,"y":-760,"width":250,"height":54},
-		{"type":"file","file":"notes/Story/Characters/Herzog Frog.md","id":"2076728b1e1fd1e0","x":-180,"y":630,"width":365,"height":400,"color":"4"},
-		{"type":"file","file":"notes/Story/Characters/Squire Spring Hopper.md","id":"be02e286b3509bdf","x":800,"y":630,"width":400,"height":400},
-		{"type":"text","text":"Secret: Someone got murdered","id":"84d4bb22f0e27611","x":365,"y":1200,"width":250,"height":80},
-		{"type":"file","file":"notes/Story/Characters/Countess Newt.md","id":"f9a2a8e50b469f17","x":800,"y":-600,"width":400,"height":400,"color":"2"}
+		{"type":"file","file":"notes/Story/Characters/Countess Newt.md","id":"f9a2a8e50b469f17","x":800,"y":-600,"width":400,"height":400,"color":"2"},
+		{"type":"file","file":"notes/Story/Characters/Squire Spring Peeper.md","id":"be02e286b3509bdf","x":800,"y":830,"width":400,"height":400},
+		{"type":"text","text":"Secret: Someone got murdered","id":"84d4bb22f0e27611","x":280,"y":1320,"width":250,"height":80},
+		{"type":"file","file":"notes/Story/Characters/Baron Olm.md","id":"a9571d6cab80a3a4","x":-280,"y":-733,"width":400,"height":400},
+		{"type":"file","file":"notes/Story/Characters/Herzog Frog.md","id":"2076728b1e1fd1e0","x":0,"y":520,"width":365,"height":400,"color":"4"},
+		{"id":"bf247e4456edc92c","x":-680,"y":1320,"width":400,"height":400,"type":"file","file":"notes/Story/Characters/Great Toad Council.md"},
+		{"id":"1196cf579d57861b","x":-1524,"y":720,"width":400,"height":400,"type":"file","file":"notes/Story/Characters/Commander Salamander.md"}
 	],
 	"edges":[
 		{"id":"6f7008041ca5fadb","fromNode":"a9571d6cab80a3a4","fromSide":"right","toNode":"f9a2a8e50b469f17","toSide":"left","fromEnd":"arrow","color":"4","label":"Only Friend"},
 		{"id":"26476bb6307a35c0","fromNode":"be02e286b3509bdf","fromSide":"bottom","toNode":"84d4bb22f0e27611","toSide":"top"},
 		{"id":"9307705de406ff1c","fromNode":"2076728b1e1fd1e0","fromSide":"bottom","toNode":"84d4bb22f0e27611","toSide":"top"},
-		{"id":"2566a1e320025154","fromNode":"e491bc4a8b3cf691","fromSide":"right","toNode":"f9a2a8e50b469f17","toSide":"bottom","fromEnd":"arrow","color":"6","label":"Childhood Friends / \nBeing exploited for influence"},
-		{"id":"7af937b48f042c53","fromNode":"2076728b1e1fd1e0","fromSide":"left","toNode":"e491bc4a8b3cf691","toSide":"bottom","fromEnd":"arrow","color":"3","label":"Feels like needs to give fatherly advice\nAfraid of upsetting"},
-		{"id":"6c49caf546af3dba","fromNode":"a9571d6cab80a3a4","fromSide":"left","toNode":"e491bc4a8b3cf691","toSide":"top","fromEnd":"arrow","color":"3","label":"Feels a kindred spirit but is too shy\nA bit scared of like, hurting olm"},
-		{"id":"607bbc0c47eff666","fromNode":"a9571d6cab80a3a4","fromSide":"bottom","toNode":"2076728b1e1fd1e0","toSide":"top","fromEnd":"arrow","color":"1","label":"Upset over close-mindedness\nAfraid of technology"},
+		{"id":"2566a1e320025154","fromNode":"e491bc4a8b3cf691","fromSide":"top","toNode":"f9a2a8e50b469f17","toSide":"left","color":"4","label":"Childhood Friends\n"},
+		{"id":"7af937b48f042c53","fromNode":"2076728b1e1fd1e0","fromSide":"top","toNode":"e491bc4a8b3cf691","toSide":"right","color":"3","label":"fatherly (patronizing) advice\n"},
+		{"id":"6c49caf546af3dba","fromNode":"a9571d6cab80a3a4","fromSide":"bottom","toNode":"e491bc4a8b3cf691","toSide":"right","color":"3","label":"Feels a kindred spirit but is too shy\n"},
+		{"id":"607bbc0c47eff666","fromNode":"a9571d6cab80a3a4","fromSide":"bottom","toNode":"2076728b1e1fd1e0","toSide":"top","color":"1","label":"Afraid of technology"},
 		{"id":"b1e809f57a568ad4","fromNode":"e491bc4a8b3cf691","fromSide":"left","toNode":"a56c06d166ec1950","toSide":"right"},
 		{"id":"8d4c98b151b0bc45","fromNode":"a9571d6cab80a3a4","fromSide":"top","toNode":"8c327090177ad1d2","toSide":"left"},
 		{"id":"bae39404ade8374c","fromNode":"f9a2a8e50b469f17","fromSide":"top","toNode":"8c327090177ad1d2","toSide":"right"},
-		{"id":"bd0995fe95f1ea12","fromNode":"be02e286b3509bdf","fromSide":"left","toNode":"2076728b1e1fd1e0","toSide":"right","fromEnd":"arrow","color":"3","label":"Looks up to\nAfraid of letting down"}
+		{"id":"bd0995fe95f1ea12","fromNode":"be02e286b3509bdf","fromSide":"top","toNode":"2076728b1e1fd1e0","toSide":"right","color":"4","label":"looks up to"},
+		{"id":"ee5535b2ec489cfc","fromNode":"1196cf579d57861b","fromSide":"top","toNode":"e491bc4a8b3cf691","toSide":"left","color":"6","label":"fatherly manipulation"},
+		{"id":"ecc91d1f461a88b6","fromNode":"e491bc4a8b3cf691","fromSide":"bottom","toNode":"1196cf579d57861b","toSide":"right","color":"4","label":"strongly respects"},
+		{"id":"3101e3cbd5351273","fromNode":"e491bc4a8b3cf691","fromSide":"top","toNode":"a9571d6cab80a3a4","toSide":"left","color":"1","label":"Unsure about"},
+		{"id":"eab9913617b053e7","fromNode":"e491bc4a8b3cf691","fromSide":"bottom","toNode":"2076728b1e1fd1e0","toSide":"top","color":"3","label":"Afraid of upsetting"},
+		{"id":"aac6aadca9f62b65","fromNode":"f9a2a8e50b469f17","fromSide":"bottom","toNode":"e491bc4a8b3cf691","toSide":"right","color":"6","label":"Exploiting for influence"},
+		{"id":"3ffe9a39fb47a3e7","fromNode":"a9571d6cab80a3a4","fromSide":"right","toNode":"2076728b1e1fd1e0","toSide":"top","color":"1","label":"Upset over close-mindedness"},
+		{"id":"8753e8f902aa8e4c","fromNode":"2076728b1e1fd1e0","fromSide":"left","toNode":"1196cf579d57861b","toSide":"right","fromEnd":"arrow","color":"1","label":"military rivals"},
+		{"id":"ddbde57bd0d3e6eb","fromNode":"2076728b1e1fd1e0","fromSide":"bottom","toNode":"bf247e4456edc92c","toSide":"right","color":"4","label":"naively supports"},
+		{"id":"403e40caa315e0c6","fromNode":"bf247e4456edc92c","fromSide":"top","toNode":"2076728b1e1fd1e0","toSide":"left","color":"3","label":"patron; despised"},
+		{"id":"29a2631473d438de","fromNode":"2076728b1e1fd1e0","fromSide":"bottom","toNode":"be02e286b3509bdf","toSide":"left","color":"3","label":"afraid of letting down"}
 	]
 }
