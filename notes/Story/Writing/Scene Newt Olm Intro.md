@@ -2,7 +2,7 @@
 
 *Conclusion:* You both arrive at Olm's lair. You individually do negotiations over something.
 
-*Information being withheld:* Olm and Newt have a deal; that the higher quality ore will go to Newt and the [[Pleurodelinae Plutocracy]] instead of the Queen. Why? Idk.
+*Information being withheld:* Olm and Newt have a deal; that the higher quality ore will go to Newt and the [[Worldbuilding#Pleuro Plutocracy]] instead of the Queen. Why? Idk.
 ## Newt Intro
 
 "The Queen gives you directions to the OIm's home. It's quite a distance away from anything else."
