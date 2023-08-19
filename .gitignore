@@ -13,6 +13,7 @@ game/saves/
 *.o
 *.so
 
+*.bak
 *.rpyc
 *.rpymc
 
