@@ -13,9 +13,8 @@ We should use a github project to manage stuff. It’s probably the best way to 
 ### The Team
 Team is recruited ad-hoc from the discord server. Current contributors include:
 
-|   |   |   |   |   |
+|Name|Discord|Username|Roles/Skillsets|Involved?|Github Profile|
 |---|---|---|---|---|
-|Name|Discord Username|Roles/Skillsets|Involved?|Github Profile|
 |Tycho/Äonothem|tychoaonothem|Programmer, Maintainer|Yes|https://github.com/Tychology|
 |Rosa|rosecommittee|Programmer|Don’t think so?|https://github.com/RosaKadar|
 |HeroKP|herokp|Writer|Yes||
