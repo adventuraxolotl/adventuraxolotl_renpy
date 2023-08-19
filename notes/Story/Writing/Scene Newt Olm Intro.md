@@ -70,4 +70,5 @@ o "This is a 'dowsing' drone. All you have to do is spin the two halves against 
 o "If you can do this for me, I can promise the Queen that the ores she receives will be of renewed high quality within the next two weeks."
 
 ### Outro
+#todo 
 "You go back home lol"
