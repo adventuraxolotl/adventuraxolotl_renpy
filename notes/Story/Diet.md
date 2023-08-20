@@ -8,12 +8,19 @@ The typical voting bloc is Olm-Newt, Toads-Anura, with Axolotl as a breaking tie
 
 **On occasion**, there will be an Axolotl-Other bloc; with the other three against. In these situations, the player will be asked to convince one of the other three.
 
+**Sub-committees**:
+- A group of three characters, who will decide on something. When it is Axolotl's interests in play, the player will be sent as a representative.
+- The player will have some influence over which characters are chosen per subcommittee.
+- Can include minor characters and observers.
+
 **Electors:**
 - Axolotl. Interest: **peace**
 - Anura. Interest: **tradition**
 - Olm. Interest: **technology**
-- Newt. Interest: **progress**
+	- Attends via zoom lmao
+- Newt. Interest: **progress**. Conflict: *must vote in favor with the capitalists*
 - Toads. Interest: **unity**/**religion**/**democracy**?
 **Observers:**
 - The Army. Interest: **stability**
 - The Family. Interest: **profit**
+	- Also represents freshwater fishes who live in the river; and aren't considered to be full citizens of lissamphibia.
