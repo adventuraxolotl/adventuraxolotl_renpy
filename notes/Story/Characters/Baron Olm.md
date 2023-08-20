@@ -1,6 +1,6 @@
 ![[Icon Olm.png]]
 ![[adventuraxolotl-olm.png]]
-Lives in a cave. Uses drones to mine stuff.
+Lives in a cave. Uses drones to mine stuff. Reclusive and scheming. Always trying to trick people and quite good at it.
 
 A trickster and plotter. Just wants to do his science stuff but needs stuff from the outside world to do it. Almost never clear with his intent.
 
