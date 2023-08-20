@@ -1,0 +1,1 @@
+Something something capitalism is causing climate change. Newt is under attack, and tries to defend herself/the capitalists.
