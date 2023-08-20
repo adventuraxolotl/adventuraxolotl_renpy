@@ -1,9 +1,7 @@
-default intro.axolotl_wakeupCount = 0
-default intro.peeper_questions = []
-default intro.peeper_flirted = False
-default intro.frog_kneeled = False
 
 label axolotl_intro:
+    default flag_axolotlIntro.seen = False
+    default __axolotl_wakeupCount = 0
     "Today, you are beginning your work in the amphibian kingdom. It’s been a long journey, but now it is time to work."
     "You’re awaiting your first audience with Queen Axolotl."
 
@@ -31,8 +29,8 @@ label axolotl_intro:
         "My Queen. <kneels>":
             pass
         "…":
-            $ intro.axolotl_wakeupCount += 1
-            if intro.axolotl_wakeupCount <= 2:
+            $ __axolotl_wakeupCount += 1
+            if __axolotl_wakeupCount <= 2:
                 a "*snore*"
                 jump .axolotl_wakeup
             else:
@@ -118,17 +116,19 @@ label axolotl_intro:
 
     a "I can tell you more about the situation if you’d like before you choose one."
     
+    $ flag_axolotlIntro.seen = True
+
     menu:
         "Yes, I'd like to ask some questions.":
             call axolotl_info
-        "I'll talk to Baron Olm.": 
-            a "Great! Let's get you on your way..."
-            jump olm_intro
-        "I'll talk to Herzog Frog.":
-            a "Great! Let's get you on your way..."
-            jump frog_intro
+        "I'll head out.":
+            jump sys_travel
 
-label peeper_intro:
+label frog_intro:
+    default flag_frogIntro.seen = False
+    default __peeper_questions = []
+    default __peeper_flirted = False
+
     scene bg castle_outside
 
     "You're packed into a caravan and taken to Herzog Frog's Duchy."
@@ -180,7 +180,7 @@ label peeper_intro:
     with dissolve
 
     menu .peeper_questions:
-        set intro.peeper_questions
+        set __peeper_questions
         "While you're walking, it could be a good time to make some casual conversation, or to ask some questions."
 
         "How long have you been doing this job for?":
@@ -211,8 +211,8 @@ label peeper_intro:
             p "And he {i}loves{/i} being complimented. Just don't call him cute. He really hates that."
             jump .peeper_questions
 
-        "Keep walking in silence." if len(intro.peeper_questions) <= 2:
-            if len(intro.peeper_questions) == 1:
+        "Keep walking in silence." if len(__peeper_questions) <= 2:
+            if len(__peeper_questions) == 1:
                 "You walk in silence."
                 "Peeper vibrates awkwardly, seeming to want to gush about something or someone."
                 "He thinks better of it."
@@ -229,11 +229,11 @@ label peeper_intro:
         "Thank you for escorting me.":
             p "No problem. It's what I'm here for."
 
-        "I appreciated talking to you, it's really calmed my nerves." if len(intro.peeper_questions) >= 2:
+        "I appreciated talking to you, it's really calmed my nerves." if len(__peeper_questions) >= 2:
             p "Of course! I'm always glad to tell someone of the brilliance of the great Duke Herzog!"
 
-        "You know Spring Peeper, you're kind of a cutie yourself." if len(intro.peeper_questions) >= 3:
-            $ intro.peeper_flirted = True
+        "You know Spring Peeper, you're kind of a cutie yourself." if len(__peeper_questions) >= 3:
+            $ __peeper_flirted = True
             "The squire blushes and stammers."
             p "u-um..."
 
@@ -242,7 +242,7 @@ label peeper_intro:
 
     "You hear a little bell from the room beyond him."
 
-    if intro.peeper_flirted:
+    if __peeper_flirted:
         p "uh, her Grave is ready{nw}"
         p "I-I mean, h-His Grace."
         p "His Grace is ready for you now."
@@ -252,7 +252,7 @@ label peeper_intro:
     
     "Peeper opens the door for you and waves you in."
 
-label frog_intro:
+    default __frog_kneeled = False
     scene bg frog
     show advax_frog_sword
     show advax_frog_throne
@@ -282,9 +282,9 @@ label frog_intro:
         "Bow":
             pass
         "Kneel":
-            $ intro.frog_kneeled = True
+            $ __frog_kneeled = True
         "Prostrate yourself":
-            $ intro.frog_kneeled = True
+            $ __frog_kneeled = True
 
     call sys_greeting
     "You" "{size=[_return.what_size]}[_return.string]{/size}"
@@ -355,7 +355,11 @@ label frog_intro:
             "Is that a speech impediment or do all frogs just say ribbit at the end of every line?":
                 "blah"
 
+    $ flag_frogIntro.seen = True
+    jump sys_travel
+
 label olm_intro:
+    default flag_olmIntro.seen = False
     scene bg olm
     label newt_intro:
         "The Queen gives you directions to the OIm's home. It's quite a distance away from anything else."
@@ -397,7 +401,6 @@ label olm_intro:
         n "I'll be quick, Darl. I'll let Olm know you're waiting."
         hide newt
 
-    label .olm_intro:
         "Newt exits the chamber, and waves you in."
 
         "It's dark. Your eyes adjust to the cave."
@@ -437,3 +440,5 @@ label olm_intro:
             "blah"
         "I give up.":
             "blah"
+    $ flag_olmIntro.seen = True
+    jump sys_travel
