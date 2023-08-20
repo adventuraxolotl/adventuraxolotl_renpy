@@ -1,5 +1,6 @@
 
 label axolotl_intro:
+    default flag_axolotlIntro.seen = False
     default __axolotl_wakeupCount = 0
     "Today, you are beginning your work in the amphibian kingdom. It’s been a long journey, but now it is time to work."
     "You’re awaiting your first audience with Queen Axolotl."
@@ -115,17 +116,16 @@ label axolotl_intro:
 
     a "I can tell you more about the situation if you’d like before you choose one."
     
+    $ flag_axolotlIntro.seen = True
+
     menu:
         "Yes, I'd like to ask some questions.":
             call axolotl_info
-        "I'll talk to Baron Olm.": 
-            a "Great! Let's get you on your way..."
-            jump olm_intro
-        "I'll talk to Herzog Frog.":
-            a "Great! Let's get you on your way..."
-            jump frog_intro
+        "I'll head out.":
+            jump sys_travel
 
-label peeper_intro:
+label frog_intro:
+    default flag_frogIntro.seen = False
     default __peeper_questions = []
     default __peeper_flirted = False
 
@@ -252,7 +252,6 @@ label peeper_intro:
     
     "Peeper opens the door for you and waves you in."
 
-label frog_intro:
     default __frog_kneeled = False
     scene bg frog
     show advax_frog_sword
@@ -356,7 +355,11 @@ label frog_intro:
             "Is that a speech impediment or do all frogs just say ribbit at the end of every line?":
                 "blah"
 
+    $ flag_frogIntro.seen = True
+    jump sys_travel
+
 label olm_intro:
+    default flag_olmIntro.seen = False
     scene bg olm
     label newt_intro:
         "The Queen gives you directions to the OIm's home. It's quite a distance away from anything else."
@@ -398,7 +401,6 @@ label olm_intro:
         n "I'll be quick, Darl. I'll let Olm know you're waiting."
         hide newt
 
-    label .olm_intro:
         "Newt exits the chamber, and waves you in."
 
         "It's dark. Your eyes adjust to the cave."
@@ -438,3 +440,5 @@ label olm_intro:
             "blah"
         "I give up.":
             "blah"
+    $ flag_olmIntro.seen = True
+    jump sys_travel
