@@ -1,14 +1,14 @@
 {
 	"nodes":[
-		{"type":"file","file":"notes/Story/Characters/Queen Axolotl.md","id":"e491bc4a8b3cf691","x":-1040,"y":-40,"width":400,"height":400,"color":"6"},
-		{"type":"file","file":"notes/Story/Characters/Squire Spring Peeper.md","id":"be02e286b3509bdf","x":800,"y":830,"width":400,"height":400},
-		{"type":"file","file":"notes/Story/Characters/Baron Olm.md","id":"a9571d6cab80a3a4","x":-280,"y":-733,"width":400,"height":400},
-		{"type":"file","file":"notes/Story/Characters/Great Toad Council.md","id":"bf247e4456edc92c","x":-680,"y":1320,"width":400,"height":400},
-		{"type":"file","file":"notes/Story/Characters/Commander Salamander.md","id":"1196cf579d57861b","x":-1524,"y":720,"width":400,"height":400},
+		{"type":"file","file":"notes/Characters/Queen Axolotl.md","id":"e491bc4a8b3cf691","x":-1040,"y":-40,"width":400,"height":400,"color":"6"},
+		{"type":"file","file":"notes/Characters/Squire Spring Peeper.md","id":"be02e286b3509bdf","x":800,"y":830,"width":400,"height":400},
+		{"type":"file","file":"notes/Characters/Baron Olm.md","id":"a9571d6cab80a3a4","x":-280,"y":-733,"width":400,"height":400},
+		{"type":"file","file":"notes/Characters/Great Toad Council.md","id":"bf247e4456edc92c","x":-680,"y":1320,"width":400,"height":400},
+		{"type":"file","file":"notes/Characters/Commander Salamander.md","id":"1196cf579d57861b","x":-1524,"y":720,"width":400,"height":400},
 		{"type":"text","text":"Secret: Selling quality ore","id":"8c327090177ad1d2","x":365,"y":-880,"width":250,"height":54},
 		{"type":"text","text":"Secret: Someone got murdered","id":"84d4bb22f0e27611","x":58,"y":1440,"width":250,"height":80},
-		{"type":"file","file":"notes/Story/Characters/Countess Newt.md","id":"f9a2a8e50b469f17","x":760,"y":-600,"width":400,"height":400,"color":"2"},
-		{"type":"file","file":"notes/Story/Characters/Herzog Frog.md","id":"2076728b1e1fd1e0","x":0,"y":520,"width":365,"height":400,"color":"4"},
+		{"type":"file","file":"notes/Characters/Countess Newt.md","id":"f9a2a8e50b469f17","x":760,"y":-600,"width":400,"height":400,"color":"2"},
+		{"type":"file","file":"notes/Characters/Herzog Frog.md","id":"2076728b1e1fd1e0","x":0,"y":520,"width":365,"height":400,"color":"4"},
 		{"type":"text","text":"Plot: Someone is poisoning axolotl to get her to morph. She's ill.","id":"a56c06d166ec1950","x":-1774,"y":113,"width":250,"height":94}
 	],
 	"edges":[

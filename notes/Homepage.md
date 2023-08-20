@@ -1,5 +1,5 @@
 [[Project]]
-[[Story]]
+[[Outline]]
 [[Gameplay]]
 
 [Adventuraxolotl Order](https://docs.google.com/spreadsheets/d/1WOdiqc_1_e7M_OSGHYFxNaIipPIPppsC2Owbj20TD2w/edit#gid=0)

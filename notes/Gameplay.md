@@ -22,7 +22,7 @@ However, buying items and bribes don’t actually work on these two to increase 
 ### Items and Gifts
 The player will be able to hold onto items, and give them to various characters, or use them in some other way. They can be bought, found, or given.
 ### The Calendar
-At some cycle length (every month?), the great council will convene and discuss/vote on a measure or reform.
+At some cycle length (every month?), the [[Diet]] will convene and discuss/vote on a measure or reform.
 The player can sign up to do certain things, such as be on committees etc. This can be a regular expectation.
 ### Locations 
 Each day/week the player will choose one activity. Some conversations are time-taking, others are not. There should be a way to spend time with characters without triggering a conversation.

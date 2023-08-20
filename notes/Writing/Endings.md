@@ -1,3 +1,27 @@
+Think **Fire Emblem: Three Houses**.
+Each character with an ending has an ideological basis, and an ideal world that they want to see. Each character also believes that every other ending kind of sucks, to various degrees.
+
+Potential states that lissamphibia can be at the end of the game:
+- Vassal to Fish Empire
+- Destroyed. Turned to Dust.
+- Technological Singularity - Baron Olm
+- Religious Singularity
+- Reform of the Head of State: 
+	- Military Coup by Commander Salamander.
+	- Election of a president or monarch:
+		- Queen Axolotl stays
+		- Election of other
+- Reform of the [[Diet]]: 
+	- Reduced representatives
+	- Plus elected representatives
+	- Elected representatives only
+- Capitalism wins - full industry.
+	- Climate change end
+	- Sustainable end
+- Full revolution
+	- Good: Supported by player - uneasy peace end?
+	- Bad: Not supported by player. Too much tradition. Napolenic wars / invasion end
+
 I suppose one ending could be when Baron Olm gets so much support (aka Affection) that he ushers the world into a technological renaissance.
 
 The reason why the game would “end” is because the technologies (AGI, Mind Uploading, Cybernetics, etc) would cause so many changes so rapidly that even if we tried to program them in, the game would be unplayable.
