@@ -225,12 +225,7 @@ label frog_intro:
             "The frog doesn't seem completely convinced."
             p "Well... okay..."
     
-    menu: 
-        p "I can take you into see His Grace, but I'll need to pat you down first. Is that okay?"
-        "Yes, of course":
-            pass
-        "Fine.":
-            pass
+    p "I can take you into see His Grace, but I'll need to pat you down first."
     
     "Peeper professionally pats your person for potentially powerful pikes, pistols, or pocketknives."
     "He finds nothing."
@@ -306,7 +301,7 @@ label frog_intro:
     "You hear a little bell from the room beyond him."
 
     if __peeper_flirted:
-        p "uh, her Grave is ready{nw}"
+        p "uh, his Grav-{nw}"
         p "I-I mean, h-His Grace."
         p "His Grace is ready for you now."
         p "You can go."
@@ -384,46 +379,12 @@ label frog_intro:
     jump .import_taxes
 
 
-    label .import_taxes:
-        f "Now tell me, for what have you come here for?"
-        play music "music/macleod/On the Ground.mp3"
-        f "You say that the trade deal is up for renegociation?"
-        f "I'll be the judge of that."
-        f "..."
-        f "..."
-        f "..."
-        "The Frog appears to be deep in thought."
-        f "..."
-        f "..."
-        f "..."
-        f "..."
-        f "Ambassador of the Axolotl."
-        f "It is a good tiding that you are here today, for I was about to send a representative to re-negociate the trade deal between the Kingdom of Ambystoma and the Anura Duchy."
-        menu:
-            f "As the host, I would like to offer you the chance to make the first offer."
-            "Total free trade agreement.":
-                f "No, absolutely not."
-            "Same agreement as last time.":
-                f "Perhaps."
-            "We will reduce the import tax on fruitflies and beetle larvae by 4\% for a commensurate decrease in the sale of Axolotl-branded merchandise in your country towns.":
-                f "Perhaps."
-            "No, you first.":
-                f "Okay."
-        menu:
-            f "I am raising import tax by 4\%. Ribbit."
-            "But Queen Axolotl cannot accept that!":
-                "blah"
-            "Well, I'm raising import tax by 5\% then. Let's see who wins this trade war.":
-                "blah"
-            "Is that a speech impediment or do all frogs just say ribbit at the end of every line?":
-                "blah"
-
     if flag_intro_olmFirst:
         jump sys_travel
 
 label olm_intro:
     scene bg olm
-    label newt_intro:
+    label .newt_intro:
         "The Queen gives you directions to the OIm's home. It's quite a distance away from anything else."
 
         "Eventually you arrive at what you think is the right spot. There's absolutely nothing around, though."
@@ -475,33 +436,7 @@ label olm_intro:
 
         o "Yes, yes. Newt let you in. I don't know why she did that. But please, make it quick. I have many more important things to tend to than... whatever this is."
 
-        "Olm vaguely gestures in your direction."
-
-        o "Oh? The mining exports are of low-quality? That's unfortunate, isn't it?"
-
-        o "The reality of the situation is, that ore is still the greatest quality available. We can't exactly mine pure steel out of the ground. The vein gives eventually."
-
-        o "No. No, there is nothing to talk about here. Neither I nor the Queen have the agency to change the simple fact that there is not enough. I propose that you simply go back to her, and let her be a bit sad for a bit. I'm certain she'll get over it."
-
-        o "If you can't handle that, I *can* offer a work around."
-        ### Devious scheme
-        o "Herzog's territory is relatively rich in mineral wealth. However, the fool has declined every opportunity to exploit it. I propose this:"
-
-        "Olm procures a small sphere, split in two halves, and rolls it to you."
-
-        o "This is a 'dowsing' drone. All you have to do is spin the two halves against each other to activate it in Herzog's territory. It will do the rest."
-
-        o "If you can do this for me, I can promise the Queen that the ores she receives will be of renewed high quality within the next two weeks."
-        
-        hide olm
-    menu:
-        o "That is not acceptable. Try harder."
-        "Will you accept my deal?":
-            o "You are dreaming. Please wake up."
-        "Screw you, you blind worm.":
-            "blah"
-        "I give up.":
-            "blah"
+        "Olm gestures in your general direction."
     
     if flag_intro_olmFirst:
         jump sys_travel
