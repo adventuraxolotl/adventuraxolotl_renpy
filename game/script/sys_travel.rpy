@@ -1,5 +1,11 @@
 default dayCount = 1
 default travel_active = False
+default chosen_location = "axolotl"
+default axolotl.available = False
+default frog.available = True
+default olm.available = True
+default peeper.available = False
+default newt.available = False
 
 screen travelButton:
     vbox:
@@ -21,15 +27,21 @@ label sys_progress_day:
 
 label sys_travel:
     menu:
-        "Where do you want to go?"
-        "Kingdom Ambystoma" if not flag_axolotlIntro.seen:
-            jump location_axolotl
-        "Anura Duchy" if not flag_frogIntro.seen:
-            jump location_frog
-        "Proteus Fiefdom" if not flag_olmIntro.seen:
-            jump location_olm
+        "Who do you want to talk to?"
+        "Queen Axolotl" if axolotl.available:
+            call axolotl
+        "Spring Peeper" if peeper.available:
+            call peeper
+        "Herzog Frog" if frog.available:
+            call frog
+        "Baron Olm" if olm.available:
+            call olm
+        "Countess Newt" if newt.available:
+            call newt
 
-label location_axolotl:
+    call expression _return
+
+label axolotl:
     if not flag_axolotlIntro.seen:
         jump axolotl_intro
     scene bg axolotl 
@@ -37,7 +49,7 @@ label location_axolotl:
         "talk to axolotl":
             "blah"
 
-label location_frog:
+label frog:
     if not flag_frogIntro.seen:
         jump frog_intro
     scene bg frog
@@ -47,7 +59,7 @@ label location_frog:
         "talk to peeper":
             "blah"
 
-label location_olm:
+label olm:
     if not flag_olmIntro.seen:
         jump olm_intro 
     scene bg olm
