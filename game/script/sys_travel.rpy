@@ -42,16 +42,12 @@ label sys_travel:
     call expression _return
 
 label axolotl:
-    if not flag_axolotlIntro.seen:
-        jump axolotl_intro
     scene bg axolotl 
     menu:
         "talk to axolotl":
             "blah"
 
 label frog:
-    if not flag_frogIntro.seen:
-        jump frog_intro
     scene bg frog
     menu:
         "talk to frog":
@@ -60,8 +56,6 @@ label frog:
             "blah"
 
 label olm:
-    if not flag_olmIntro.seen:
-        jump olm_intro 
     scene bg olm
     menu:
         "talk to olm":

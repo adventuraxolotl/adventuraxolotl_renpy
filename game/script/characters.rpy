@@ -1,4 +1,10 @@
 define a = Character(name="Axolotl", color = "#FF526F", image="axolotl", who_prefix="Queen ")
+
+layeredimage frog:
+    attribute sword default
+    attribute throne default
+    attribute base default
+
 define f = Character(name="Frog", color="#00C592", image="frog", who_prefix="Herzog ")
 define o = Character(name="Olm", color="#9F928D", image="olm", who_prefix="Baron ")
 define l = Character(name="Lungfish", color="#FF1A1A", image="lungfish", who_prefix="Don ")

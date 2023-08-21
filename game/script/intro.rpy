@@ -113,7 +113,7 @@ label axolotl_intro:
 
     a "Meet me back here tomorrow and I'll give you the details. For now, get some rest. I'll have the servants prepare quarters for you and get you acquainted with the complex."
 
-    show scene bg black
+    scene bg black
 
     #TODO: Write a servant character?
 
@@ -132,7 +132,7 @@ label axolotl_intro:
 
     "After spending the rest of your day exploring the complex, you're tired out. You go to sleep."
 
-    show scene bg axolotl
+    scene bg axolotl
 
     a "Good morning! I hope you slept well."
 
@@ -312,9 +312,7 @@ label frog_intro:
 
     default __frog_kneeled = False
     scene bg frog
-    show advax_frog_sword
-    show advax_frog_throne
-    show advax_frog
+    show frog
     with dissolve
     play music "music/macleod/Fluffing a Duck.mp3"
     f "..."
