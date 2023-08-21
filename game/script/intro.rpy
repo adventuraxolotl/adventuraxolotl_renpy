@@ -1,6 +1,5 @@
-
 label axolotl_intro:
-    default flag_axolotlIntro.seen = False
+    default flag_intro_olmFirst = False
     default __axolotl_wakeupCount = 0
     "Today, you are beginning your work in the amphibian kingdom. It’s been a long journey, but now it is time to work."
     "You’re awaiting your first audience with Queen Axolotl."
@@ -116,16 +115,16 @@ label axolotl_intro:
 
     a "I can tell you more about the situation if you’d like before you choose one."
     
-    $ flag_axolotlIntro.seen = True
-
     menu:
         "Yes, I'd like to ask some questions.":
             call axolotl_info
-        "I'll head out.":
-            jump sys_travel
+        "I'll talk to Herzog Frog first.":
+            jump frog_intro
+        "I'll talk to Baron Olm first.":
+            $ flag_intro_olmFirst = True
+            jump olm_intro
 
 label frog_intro:
-    default flag_frogIntro.seen = False
     default __peeper_questions = []
     default __peeper_flirted = False
 
@@ -175,7 +174,7 @@ label frog_intro:
     p "Follow me closely, I'll escort you."
 
     hide peeper with moveoutright
-    scene bg castle_inside
+    scene bg frog
     show peeper at right
     with dissolve
 
@@ -355,11 +354,10 @@ label frog_intro:
             "Is that a speech impediment or do all frogs just say ribbit at the end of every line?":
                 "blah"
 
-    $ flag_frogIntro.seen = True
-    jump sys_travel
+    if flag_intro_olmFirst:
+        jump sys_travel
 
 label olm_intro:
-    default flag_olmIntro.seen = False
     scene bg olm
     label newt_intro:
         "The Queen gives you directions to the OIm's home. It's quite a distance away from anything else."
@@ -440,5 +438,8 @@ label olm_intro:
             "blah"
         "I give up.":
             "blah"
-    $ flag_olmIntro.seen = True
-    jump sys_travel
+    
+    if flag_intro_olmFirst:
+        jump sys_travel
+    else:
+        jump frog_intro

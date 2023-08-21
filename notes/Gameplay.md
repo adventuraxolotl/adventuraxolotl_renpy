@@ -30,5 +30,19 @@ Each day/week the player will choose one activity. Some conversations are time-t
 e.g., learn psychology with the queen. Practice swordfighting with peeper. Play chess with herzog. That kind of thing.
 
 At each location there may be multiple characters, or activities that aren't talking to characters. The player will be able to choose what to do, or who to talk to, once arrived at a location.
-### Home
+
+Main locations:
+**Ambystoma Kingdom**
+	Axolotl
+	Sometimes Newt
+	Commander Salamander
+**Anura Duchy**, 
+	Herzog Frog
+	Toad Council
+	Spring Peeper
+**Proteus Fiefdom**.
+	Olm
+	Sometimes Newt
+	Don Lungfish
+#### Home
 There may be a player home. Somewhere near axolotl. Just somewhere to end days on.
