@@ -1,3 +1,4 @@
 ﻿label start:
     show screen travelButton
-    jump axolotl_intro
+    call axolotl_intro
+    $ renpy.pause()

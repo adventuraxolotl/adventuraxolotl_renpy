@@ -103,26 +103,90 @@ label axolotl_intro:
         "Gosh, I’m not sure. I just walked in. Isn’t your security a little lax?":
             pass
 
-    a "Oh, great! I really did need some help."
-    
-    a "There’s a lot of issues in my kingdom, but the kind of help I need most right now is a diplomat and ambassador." 
+    a "You're hired. You start tomorrow."
 
-    a "I just can’t find the time to talk to all the other sovereigns."
-    
-    a "Baron Olm's ore exports are becoming lower quality and I need someone to check up on what's going on with that."
+    a "There’s a lot of issues in my kingdom, but the kind of help I need most right now is a diplomat and ambassador."
 
-    a "Our trade deal with Herzog Frog's Anura Duchy is coming up and we need to renegotiate it."
-
-    a "I can tell you more about the situation if you’d like before you choose one."
+    a "I just can’t find the time to properly talk to all the other sovereigns."
     
+    a "Your first job will be to introduce yourself to our closest trading partners: Herzog Frog and Baron Olm."
+
+    a "Meet me back here tomorrow and I'll give you the details. For now, get some rest. I'll have the servants prepare quarters for you and get you acquainted with the complex."
+
+    show scene bg black
+
+    #TODO: Write a servant character?
+
+    "You're whisked away by a servant and given a tour of the complex."
+
+    "There are a couple amenities in the complex that you might be interested in. Would you like to spend some time getting used to them?"
+
     menu:
-        "Yes, I'd like to ask some questions.":
-            call axolotl_info
-        "I'll talk to Herzog Frog first.":
-            jump frog_intro
-        "I'll talk to Baron Olm first.":
-            $ flag_intro_olmFirst = True
-            jump olm_intro
+        "What would you like to do?"
+        "Go to the library and read something":
+            "You read something."
+        "Practise archery":
+            "You practise archery."
+        "Just wander around":
+            "You wander around."
+
+    "After spending the rest of your day exploring the complex, you're tired out. You go to sleep."
+
+    show scene bg axolotl
+
+    a "Good morning! I hope you slept well."
+
+    a "As we spoke yesterday, I'll have you introduce yourself to either Baron Olm or Herzog Frog."
+
+    menu:
+        a "Which do you want to meet today?"
+        "Herzog Frog":
+            pass
+        "Baron Olm":
+            $ flag_intro_olmFirst = True    
+
+    a "Oh, and before you go,"
+
+    "Queen Axolotl rummages in a nearby drawer."
+
+    a "Here. Your badge of station."
+
+    "Queen Axolotl presents a signet ring, with the seal of the Kingdom of Ambystoma printed on it. As you accept it, it's weighty and cold."
+
+    call .ring_wearing
+
+    a "Make a good first impression! You'll be my representative. It's an important job, and I need you to do it well."
+
+    if flag_intro_olmFirst:
+        jump olm_intro
+    else:
+        jump frog_intro
+
+    menu .ring_wearing:
+        "How do you wear it?"
+        "My left hand.":
+            call .finger_choice
+        "My right hand.":
+            call .finger_choice
+        "Around my neck, on a string or necklace.":
+            pass
+        "I'll just keep it in my pocket until I need it.":
+            pass
+    return
+
+    menu .finger_choice:
+        "Which finger?"
+        "Pinky":
+            pass
+        "Ring":
+            pass
+        "Middle":
+            pass
+        "Index":
+            pass
+        "Thumb":
+            pass
+    return
 
 label frog_intro:
     default __peeper_questions = []
