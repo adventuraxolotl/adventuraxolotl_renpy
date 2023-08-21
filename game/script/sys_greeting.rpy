@@ -56,61 +56,32 @@ label sys_greeting:
         "...":
             $ greeting.set.pop()
 
-    menu .adjectives:
+    menu:
         set greeting.set
         "[greeting.string]"
-        "beautiful":
-            call .change_sentiment(1)
         "handsome":
             call .change_sentiment(1)
         "powerful":
             call .change_sentiment(1)
-        "perfect":
-            call .change_sentiment(1)
         "cute":
             call .change_sentiment(-1)
-        "fulsome":
-            call .change_sentiment(-1)
-        "facile":
-            call .change_sentiment(-1)
         "prodigal":
-            call .change_sentiment(-1)
-        "no more adjectives":
-            $ greeting.set.pop()
-            jump .noun
-
-    jump .adjectives
-
-    menu .noun:
-        set greeting.set
-        "[greeting.string]"
-        "Monarch":
-            call .change_sentiment(1)
-        "Prince":
-            call .change_sentiment(1)
-        "Duke":
-            call .change_sentiment(1)
-        "Herzog":
-            call .change_sentiment(1)
-        "Knave":
-            call .change_sentiment(-1)
-        "Commoner":
             call .change_sentiment(-1)
         "...":
             $ greeting.set.pop()
 
-    menu:
+    menu .noun:
         set greeting.set
         "[greeting.string]"
+        "Prince Frog":
+            call .change_sentiment(1)
+        "Duke Frog":
+            call .change_sentiment(1)
+        "Herzog Frog":
+            call .change_sentiment(1)
         "Frog":
-            call .change_sentiment(1)
-        "Toad":
-            call .change_sentiment(1)
-        "Amphibian":
             call .change_sentiment(-1)
-        "Spring Peeper":
-            call .change_sentiment(-1)
-        "":
+        "...":
             $ greeting.set.pop()
 
     menu:
