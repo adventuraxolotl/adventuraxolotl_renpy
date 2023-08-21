@@ -310,13 +310,7 @@ label frog_intro:
     
     "Peeper opens the door for you and waves you in."
 
-    default __frog_kneeled = False
-    scene bg frog
-    show frog
-    with dissolve
-    play music "music/macleod/Fluffing a Duck.mp3"
-    f "..."
-    jump .frog_greeting
+    jump .frog_intro
     
     label .called_cute:
         f "...Ribbit."
@@ -330,52 +324,71 @@ label frog_intro:
                 f "O-hoh! A commoner with manners! How intriguing. Ribbit."
         f "I will allow you to try again. Do keep in mind what I have told you. Ribbit."
         return
-    
-    menu .frog_greeting:
-        "The Herzog sits on his chair, in silence. He watches you as you approach. He seems to want you to make the first move."
-        "Stay standing":
-            pass            
-        "Bow":
-            pass
-        "Kneel":
-            $ __frog_kneeled = True
-        "Prostrate yourself":
-            $ __frog_kneeled = True
+        
+    menu .joke_response:
+        "Laugh loudly and for a long time. Feign that you can't breathe and fall upon the floor":
+            "blah"
+        "Giggle.":
+            "blah"
+        "Loudly exhale through your nose.":
+            "blah"
+        "Stay stone-silent.":
+            "blah"
 
-    call sys_greeting
-    "You" "{size=[_return.what_size]}[_return.string]{/size}"
+    default __frog_kneeled = False
+    label .frog_intro:
+        scene bg frog
+        show frog
+        with dissolve
+        play music "music/macleod/Fluffing a Duck.mp3"
+        f "..."
 
-    f "Sentiment: [_return.sentiment]"
+        menu:
+            "The Herzog sits on his chair, in silence. He watches you as you approach. He seems to want you to make the first move."
+            "Stay standing":
+                pass            
+            "Bow":
+                pass
+            "Kneel":
+                $ __frog_kneeled = True
+            "Prostrate yourself":
+                $ __frog_kneeled = True
 
-    menu .frog_start:
-        f "I am Herzog Frog. My power is unmatched. All those who dare to betray me will taste destruction. Ribbit."
-        "Oh mighty leader, I am truly humbled.":
-            f "You have recognized my mightyness and greatness. Good. Ribbit."
-            f "Humility is a virtue most valuable in these realms. It will serve you well."
-        "If you are as great as you claim, you will have no problem besting me in a battle of wits.":
-            menu .tell_joke:
-                f "Oh, is that so? I accept! I have more wit than any other amphibian. I'll start. Knock knock. Ribbit."
-                "Who's there?":
-                    menu:
-                        f "Frog. Ribbit."
-                        "Frog who?":
-                            f "I frog-ot to tell you I'm a prince in waiting. Haha. Ribbit."
-                        "Frog ribbit who?":
-                            f "Frog going to ribbit you to shreds soon. Ribbit."
-                        "Eh, froggettabout it.":
-                            f "...Ribbit."
-                "Knock knock. Aha, who has the upper hand now?":
-                    "Blah"
-                "The cute frog's telling knock knock jokes! Dad, get the camera. This needs to go viral.":
-                    call .called_cute
-                    jump .tell_joke
-        "A tiny frog with a giant sword! It's so cute!":
-            call .called_cute
-            jump .frog_start
+        call sys_greeting
+        "You" "{size=[_return.what_size]}[_return.string]{/size}"
+
+        f "Sentiment: [_return.sentiment]"
+
+        menu:
+            f "I am Herzog Frog. My power is unmatched. All those who dare to betray me will taste destruction. Ribbit."
+            "Oh mighty leader, I am truly humbled.":
+                f "You have recognized my mightyness and greatness. Good. Ribbit."
+                f "Humility is a virtue most valuable in these realms. It will serve you well."
+            "If you are as great as you claim, you will have no problem besting me in a battle of wits.":
+                menu .tell_joke:
+                    f "Oh, is that so? I accept! I have more wit than any other amphibian. I'll start. Knock knock. Ribbit."
+                    "Who's there?":
+                        menu:
+                            f "Frog. Ribbit."
+                            "Frog who?":
+                                f "I frog-ot to tell you I'm a prince in waiting. Haha. Ribbit."
+                                call .joke_response
+                            "Frog ribbit who?":
+                                f "I frog-ot to tell you I'm a prince in waiting. Haha. Ribbit."
+                                call .joke_response
+                            "Eh, froggettabout it.":
+                                f "...Ribbit."
+                    "Knock knock. Aha, who has the upper hand now?":
+                        "Blah"
+                    "The cute frog's telling knock knock jokes! Dad, get the camera. This needs to go viral.":
+                        call .called_cute
+                        jump .tell_joke
+            "A tiny frog with a giant sword! It's so cute!":
+                call .called_cute
+                jump .frog_start
     
     $ print("blah")
     jump .import_taxes
-
 
     if flag_intro_olmFirst:
         jump sys_travel
