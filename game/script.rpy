@@ -1,8 +1,7 @@
 ﻿label start:
+    show screen travelButton
     menu:
         "Where would you like to start?"
-        "Travel Menu":
-            jump sys_travel
         "From the beginning":
             jump axolotl_intro
         "From the frog":

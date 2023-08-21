@@ -1,3 +1,14 @@
+screen travelButton:
+    textbutton "Travel" action Call("sys_travel")
+
+label startAction:
+    hide screen travelButton
+    return
+
+label endAction:
+    show screen travelButton
+    return
+
 label sys_travel:
     menu:
         "Where do you want to go?"
