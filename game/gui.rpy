@@ -66,11 +66,12 @@ define gui.name_text_font = "images/fonts/OpenSans-SemiBold.ttf"
 define gui.interface_text_font = "images/fonts/OpenSans-SemiBold.ttf"
 
 ## The size of normal dialogue text.
-define text_size.small = 24
-define text_size.normal = 33
-define text_size.large = 45
+define text_size.small = 16
+define text_size.normal = 24
+define text_size.large = 32
+define text_size.larger = 48
 
-define gui.text_size = 33
+define gui.text_size = text_size.normal
 
 ## The size of character names.
 define gui.name_text_size = 45
