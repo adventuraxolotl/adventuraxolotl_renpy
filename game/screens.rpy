@@ -1323,7 +1323,7 @@ screen nvl(dialogue, items=None):
 
             textbutton i.caption:
                 action i.action
-                style "choice"
+                style_prefix "choice"
 
     add SideImage() xalign 0.0 yalign 1.0
 
@@ -1366,6 +1366,8 @@ style nvl_window:
 
     background "gui/nvl.png"
     padding gui.nvl_borders.padding
+
+    left_margin 32
 
 style nvl_entry:
     xfill True

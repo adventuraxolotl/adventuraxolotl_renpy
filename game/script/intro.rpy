@@ -20,6 +20,8 @@ label axolotl_intro:
     
     "She breathes softly, and mumbles underneath her breath. Her eyes are closed. She doesn’t stir."
 
+    nvl clear
+
     a "…taxes…"
 
     menu .axolotl_wakeup:
