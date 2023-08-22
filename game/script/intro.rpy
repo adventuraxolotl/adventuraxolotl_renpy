@@ -312,6 +312,8 @@ label frog_intro:
 
     jump .frog_intro
     
+    default __frog_kneeled = False
+    
     label .called_cute:
         f "...Ribbit."
         menu:
@@ -335,7 +337,24 @@ label frog_intro:
         "Stay stone-silent.":
             "blah"
 
-    default __frog_kneeled = False
+    f "yes... yes, good. Now it is your turn. Ribbit."
+    menu:
+        "What kind of joke would you like to tell?"
+        "A long winded shaggy dog story":
+            "So, there's a man crawling through the desert."
+            show bg frog with fade
+            "...Wait! The sun was setting! That meant he was going to have to spend another night out here! Arrrgh!"
+            show bg frog with fade
+            "Wow, 167 years. That's almost 140 more years I'll live if I live as long. Do you know what he died of, Nate?"
+            show bg frog with fade
+            "\"Better Nate than lever!\", he ran over the snake."
+        "Observational humour on a personal experience":
+            pass
+        "A pithy piece of punnage":
+            pass
+        "Tell the frog that you can't live up to his standards":
+            pass
+
     label .frog_intro:
         scene bg frog
         show frog
@@ -387,6 +406,51 @@ label frog_intro:
                 call .called_cute
                 jump .frog_start
     
+    label .archery_challenge:
+        menu:
+            f "How about a bout of archery?"
+            "Yes, absolutely.":
+                pass
+            "No thank you.":
+                pass
+        
+        "Surprisingly, Herzog Frog is quite good at archery."
+        "Using his hind legs, there is some measure of power and grace."
+        f "Your technique is interesting. I've never quite seen anyone use a bow like that. Ribbit."
+        menu:
+            "I could say the same for you.":
+                f "I've developed this technique myself. I can confidently say that I'm the best archer ever. Ribbit."
+            "Thank you.":
+                pass
+            "Are you being condcending?":
+                pass
+        "You're neck to neck. Herzog Frog lands a shot that pulls him ahead of you."
+        menu:
+            "You can only win with a bullseye."
+            "Try for the win":
+                pass
+            "Go for a low scoring shot that you definitely can hit.":
+                pass
+    
+    label .chess_challenge:
+        menu:
+            "You're playing black. You recognize the Duke's opening as open to a Fool's Mate."
+            "Take advantage and win the first game":
+                pass
+            "Ignore it and play normally":
+                pass
+        
+        menu:
+            "It's a rematch. You're playing white. What's your playstyle?"
+            "Early queen pressure. He'll fold.":
+                "You bring your queen out within the first three moves."
+                "Herzog Frog sees through your scholar's mate, and calmly closes up his position."
+                "You get to the middle game without any material advantage, but Herzog Frog's position is practically impenetrable."
+            "A closed, stable position, then apply slow pressure.":
+                "You play - and Herzog Frog appears irritated."
+            "The bongcloud. The king should lead from the front.":
+                "You lose."
+
     if flag_intro_olmFirst:
         jump sys_travel
 

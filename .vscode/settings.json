@@ -4,5 +4,9 @@
     "**/*.rpa": true,
     "**/*.rpymc": true,
     "**/cache/": true
-  }
+  },
+  "editor.wordWrapColumn": 120,
+  "editor.rulers": [
+    120
+  ]
 }
