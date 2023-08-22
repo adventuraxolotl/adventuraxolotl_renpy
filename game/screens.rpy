@@ -221,6 +221,7 @@ style choice_vbox:
     xalign 0.5
     ypos 338
     yanchor 0.5
+    xpos gui.choice_button_xpos
 
     spacing gui.choice_spacing
 
@@ -1319,11 +1320,11 @@ screen nvl(dialogue, items=None):
 
         ## Displays the menu, if given. The menu may be displayed incorrectly if
         ## config.narrator_menu is set to True.
+        
         for i in items:
-
             textbutton i.caption:
                 action i.action
-                style "nvl_button"
+                style_prefix "choice"
 
     add SideImage() xalign 0.0 yalign 1.0
 
