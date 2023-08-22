@@ -357,7 +357,7 @@ label frog_intro:
         call sys_greeting
         "You" "{size=[_return.what_size]}[_return.string]{/size}"
 
-        f "Sentiment: [_return.sentiment]"
+        f "Sentiment: [_return.sentiment.pog - _return.sentiment.neg]"
 
         menu:
             f "I am Herzog Frog. My power is unmatched. All those who dare to betray me will taste destruction. Ribbit."
@@ -387,9 +387,6 @@ label frog_intro:
                 call .called_cute
                 jump .frog_start
     
-    $ print("blah")
-    jump .import_taxes
-
     if flag_intro_olmFirst:
         jump sys_travel
 
