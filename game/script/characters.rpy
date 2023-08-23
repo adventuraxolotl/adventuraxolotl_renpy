@@ -3,6 +3,7 @@ define narrator = nvl_narrator
 define chr_default = Character(
     kind=nvl,
 )
+define name_only = Character(kind=chr_default)
 
 #Axolotl
 define a = Character(
