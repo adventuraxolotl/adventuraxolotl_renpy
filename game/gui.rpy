@@ -66,7 +66,7 @@ define gui.name_text_font = "images/fonts/OpenSans-SemiBold.ttf"
 define gui.interface_text_font = "images/fonts/OpenSans-SemiBold.ttf"
 
 ## The size of normal dialogue text.
-define text_size.small = 16
+define text_size.small = 20
 define text_size.normal = 24
 define text_size.large = 32
 define text_size.larger = 48
@@ -74,7 +74,7 @@ define text_size.larger = 48
 define gui.text_size = text_size.normal
 
 ## The size of character names.
-define gui.name_text_size = 45
+define gui.name_text_size = text_size.normal
 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = 33
@@ -379,25 +379,25 @@ define gui.nvl_height = None
 
 ## The spacing between NVL-mode entries when gui.nvl_height is None, and between
 ## NVL-mode entries and an NVL-mode menu.
-define gui.nvl_spacing = 15
+define gui.nvl_spacing = text_size.normal
 
 ## The position, width, and alignment of the label giving the name of the
 ## speaking character.
-define gui.nvl_name_xpos = 645
-define gui.nvl_name_ypos = 0
-define gui.nvl_name_width = 225
-define gui.nvl_name_xalign = 1.0
+define gui.nvl_name_xpos = 0
+define gui.nvl_name_ypos = -16
+define gui.nvl_name_width = 541
+define gui.nvl_name_xalign = 0
 
 ## The position, width, and alignment of the dialogue text.
 define gui.nvl_text_xpos = 0
-define gui.nvl_text_ypos = 0
+define gui.nvl_text_ypos = 16
 define gui.nvl_text_width = 541
 define gui.nvl_text_xalign = 0.0
 
 ## The position, width, and alignment of nvl_thought text (the text said by the
 ## nvl_narrator character.)
-define gui.nvl_thought_xpos = 32
-define gui.nvl_thought_ypos = 0
+define gui.nvl_thought_xpos = 0
+define gui.nvl_thought_ypos = -16
 define gui.nvl_thought_width = 541
 define gui.nvl_thought_xalign = 0.0
 
