@@ -1300,22 +1300,16 @@ screen nvl(dialogue, items=None):
 
     window:
         style "nvl_window"
-
+       
+        has viewport:
+            mousewheel "change"
+            scrollbars "vertical"
         has vbox:
             spacing gui.nvl_spacing
 
         ## Displays dialogue in either a vpgrid or the vbox.
-        if gui.nvl_height:
 
-            vpgrid:
-                cols 1
-                yinitial 1.0
-
-                use nvl_dialogue(dialogue)
-
-        else:
-
-            use nvl_dialogue(dialogue)
+        use nvl_dialogue(dialogue)
 
         ## Displays the menu, if given. The menu may be displayed incorrectly if
         ## config.narrator_menu is set to True.
@@ -1335,9 +1329,7 @@ screen nvl_dialogue(dialogue):
         window:
             id d.window_id
 
-            fixed:
-                yfit gui.nvl_height is None
-
+            has vbox:
                 if d.who is not None:
 
                     text d.who:
@@ -1363,6 +1355,8 @@ style nvl_button_text is button_text
 style nvl_window:
     xfill True
     yfill True
+
+    xsize 625
 
     background "gui/nvl.png"
     padding gui.nvl_borders.padding
