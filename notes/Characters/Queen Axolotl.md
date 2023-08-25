@@ -9,3 +9,9 @@ What this means is that the main character may have to act somewhat covertly fro
 She's a pacifist.
 
 A trained psychologist.
+
+### Affection Conversations
+#scene 
+
+1. Queen axolotl is stressed about keeping everybody happy. The player convinces her to take a bit of relaxation time, including a breathing exercise and stuff. It's chill.
+2. Queen Axolotl seems stressed dealing with something someone asked her to do. Player prods her until she tells the player that she doesn't actually want to do it. Player convinces her to be more assertive.

@@ -9,3 +9,7 @@ In terms of the [[Diet]], she represents the free cities - she doesn't have a vo
 A *little bit* of a plotter.
 
 See https://en.wikipedia.org/wiki/Effective_altruism. She believes that the best way to achieve gains for society is just to become rich and use those riches.
+
+### Affection Conversations
+1. Newt is concerned that she's using everyone around her. Player convinces her this is not the case.
+2. Newt is concerned that everyone around her is using her. Player convinces her this is not the case.
