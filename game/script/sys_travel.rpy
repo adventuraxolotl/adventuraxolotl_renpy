@@ -12,6 +12,42 @@ screen travelButton:
         text "Day: [dayCount]"
         textbutton "Travel" action [SensitiveIf(travel_active), Call("sys_travel")]
 
+screen leader_panel:
+    frame:
+        background "gui/right_panel.png"
+        xsize 227
+        xalign 0.98
+        side "c l r":
+            area(0, 0, 600, 1080)
+            viewport id "vp":
+                fixed:
+                    vbox:
+                        xalign 0.5
+                        spacing 16
+                        use leader_button("axolotl")
+                        use leader_button("frog")
+                        use leader_button("olm")
+                        use leader_button("axolotl")
+                        use leader_button("frog")
+                        use leader_button("olm")
+                        use leader_button("axolotl")
+                        use leader_button("frog")
+                        use leader_button("olm")
+            vbar value YScrollValue("vp"):
+                unscrollable "hide"
+            vbar value YScrollValue("vp"):
+                unscrollable "hide"
+
+
+screen leader_button(leader="axolotl"):
+    imagebutton: 
+        idle "gui/button/leader_idle_background.png"
+        hover "gui/button/leader_selected_background.png"
+        selected_idle "gui/button/leader_selected_background.png"
+        selected_hover "gui/button/leader_selected_background.png"
+        action NullAction()
+        foreground Image("gui/icons/icon_" + leader + ".png", align = (0.5, 0.5))
+
 label startAction:
     $ travel_active = False
     return
