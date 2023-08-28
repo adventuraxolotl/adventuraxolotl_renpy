@@ -21,9 +21,26 @@ Baron turns into a shop when you have high enough affection. You can buy various
 However, buying items and bribes don’t actually work on these two to increase Affection. This is because they bribe people often, even the player, so they know what’s up. The real way to become friends with Don is by convincing him that you care about him even though he’s a fish. For the Baron, it’s listening to his nerdy ramblings and getting excited with him.
 ### Items and Gifts
 The player will be able to hold onto items, and give them to various characters, or use them in some other way. They can be bought, found, or given.
+### Currency
+The player will be given a salary every year. This is intended for use for personal use. The scale of each piece of currency is large - It's quite lucrative.
+Say that the player gets paid 10 "coins". And let's say that each coin is more or less half a year's pay for a normal person.
+#idea - invest in a business?
 ### The Calendar
 At some cycle length (every month?), the [[Diet]] will convene and discuss/vote on a measure or reform.
-The player can sign up to do certain things, such as be on committees etc. This can be a regular expectation.
+
+**Committees & Recurring Events**
+- The player can sign up to do certain things, such as be on committees etc. This can be a regular expectation. For the coming year (or multiple), the player will be expected to attend once per season, so early/mid/late.
+
+Month -> Season -> Year.
+Diets occur every year. 
+Player selects an activity every month.
+Seasons can affect some activities, e.g.
+- Player may be able to participate in harvests or harvest festivals.
+
+Player activities affects:
+- The world state. e.g. prosperity of a nation
+- Relationship with characters
+- Player stats
 ### Locations 
 Each day/week the player will choose one activity. Some conversations are time-taking, others are not. There should be a way to spend time with characters without triggering a conversation.
 
