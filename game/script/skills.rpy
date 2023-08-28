@@ -1,36 +1,48 @@
 init python:
     import collections
-
-    StateChange = collections.namedtuple('statechange', ['prop', 'delta'])
+    from enum import Enum
 
     class GameCharacter:
         def __init__(self, name, description):
             self.name = name
             self.description = description
-            self.attributes = {}
-            self.skills = {'body': Skill('body', 'body'), 'mind': Skill('mind', 'mind')}
+            self.skills = collections.Counter()
+            self.testskills = {'body': 0, 'mind': 0, 'heart': 0}
         def update_skill(self, change_tuple, shouldNotify = True):
             notification = []
             for i in change_tuple:
-                skill_name = i[0]
+                skill_name = i[0].value
                 change = i[1]
-                self.skills[skill_name].number += change
-                notification.append(f"{change:+} {skill_name}")
-            renpy.notify(", ".join(notification))
+                self.testskills[skill_name] += change
+                notification.append(f"{change:+} {game_skills[skill_name].name}")
+            if shouldNotify:
+                renpy.notify(", ".join(notification))
 
-    class Skill:
+    class SkillProperties:
         def __init__(self, name, description):
             self.name = name
             self.description = description
-            self.number = 0
     
-    player = GameCharacter("player", "the player character.")
+    class SKILL(Enum):
+        BODY = 'body'
+        MIND = 'mind'
+        HEART = 'heart'
 
-# # Attributes
-# default player.body = 0
-# default player.heart = 0
-# default player.brain = 0
+    game_skills = {
+        SKILL.BODY: SkillProperties('body', 'body'), 
+        SKILL.MIND: SkillProperties('mind', 'mind'),
+        SKILL.HEART: SkillProperties('heart', 'heart')
+        }
 
+default player = GameCharacter("player", "the player character.")
+
+screen skill_panel:
+    frame:
+        has vbox
+        for i in game_skills:
+            hbox:
+                text "[i.value]:"
+                bar value player.testskills[i.value] range 100
 # #Skills
 # default player.warfare = 0
 # default player.dexterity = 0
