@@ -1314,11 +1314,11 @@ screen nvl(dialogue, items=None):
         ## Displays the menu, if given. The menu may be displayed incorrectly if
         ## config.narrator_menu is set to True.
         for i in items:
-
             textbutton i.caption:
+                if 'disabled' in i.kwargs:
+                    sensitive False
                 action i.action
                 style_prefix "choice"
-
     add SideImage() xalign 0.0 yalign 1.0
 
 
