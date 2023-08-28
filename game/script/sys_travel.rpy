@@ -61,6 +61,27 @@ label sys_progress_day:
         dayCount += 1
     return
 
+label activity:
+    while True:
+        menu:
+            "What do you want to do?"
+            "Train with Duke Herzog":
+                $ renpy.notify("+2 str, +1 war, +1 frog affection.")
+                $ player.update_skill([("body", 2), ("mind", -1)])
+                "You train with Duke Herzog."
+            "Learn about psychology with Queen Axolotl.":
+                $ renpy.notify("+2 empathy, +1 cha, +1 axolotl affection.")
+                "You learn about psychology with Queen Axolotl."
+            "Tinker with technology with Baron Olm.":
+                $ renpy.notify("+2 int, +1 tech, +1 olm affection.")
+                "You tinker with technology with Baron Olm."
+            "Mingle with high society with Countess Newt.":
+                $ renpy.notify("+2 cha, +1 dex, +1 newt affection.")
+                "You mingle with high society with countess newt."
+            "Live astetically with the Great Council of Toads.":
+                $ renpy.notify("+2 int, +1 str, +1 toad affection.")
+                "You live astetically with the Great Council of Toads."
+
 label sys_travel:
     menu:
         "Who do you want to talk to?"
